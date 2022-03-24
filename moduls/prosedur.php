@@ -244,9 +244,9 @@
                     $dta=frmdeldata($dta);    
                 }
             }else{
-                $dta["err"]=1;
+                $dta["err"]=true;
                 $dta["act"]="del";
-                $dtx=searchdata($dta);
+                $dta=searchdata($dta);
             }
             $dtx = $dta;
         }
